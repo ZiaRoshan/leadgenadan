@@ -1,0 +1,64 @@
+<div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+
+                   <div class="grid grid-cols-2">
+
+        <!-- First Grid Column -->
+        <div class="bg-[#46eff0] h-[1338px] flex flex-col justify-center items-center gap-12">
+            <div class="wrapp w-auto mx-auto flex gap-4  justify-center">
+                <div>
+                    <h1 class="text-4xl font-bold">01.</h1>
+                </div>
+                <div class="hANdp flex flex-col gap-2 w-[55%]">
+                    <h2 class="text-2xl font-medium">
+                        The best sound.
+                    </h2>
+                    <p class="text-sm">Put it on repeat and stay unplugged all day thanks to up to 40 hours of battery
+                        life. You can
+                        keep track of the battery with the illuminated LED fuel gauge located on the headphone itself.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapp w-auto mx-auto flex gap-4 justify-center">
+                <div>
+                    <h1 class="text-4xl font-bold">02.</h1>
+                </div>
+                <div class="hANdp flex flex-col gap-2 w-[55%]">
+                    <h2 class="text-2xl font-medium">
+                        Unbelievable doom.
+                    </h2>
+                    <p class="text-sm">This headphone delivers premium playback with fine-tuned acoustics that maximize
+                        clarity, breadth, and balance. The comfort-cushion ear cups buffer outside noise for immersive
+                        sound.
+                    </p>
+                </div>
+            </div>
+            <div class="wrapp w-auto mx-auto flex gap-4 justify-center">
+                <div>
+                    <h1 class="text-4xl font-bold">01.</h1>
+                </div>
+                <div class="hANdp flex flex-col gap-2 w-[55%]">
+                    <h2 class="text-2xl font-medium">
+                        Drop the bass.
+                    </h2>
+                    <p class="text-sm">The ultimate staple in your headphone closet, Plattan offers a rich, secluded
+                        sound experience, and convenient extras that make life easier. Features a fabric headband,
+                        tangle-free cable, built-in mic/remote.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Second Grid Column -->
+        <div class="h-[1338px]"
+            style="background-image: url('/img/hero-bg38.jpg'); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+        </div>
+
+    </div>

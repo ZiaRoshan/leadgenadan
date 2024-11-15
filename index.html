@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <title>Document</title>
+    <style type="text/css">
+        html,
+        body {
+            height: 100vh;
+            margin: 0;
+        }
+
+        #menu-toggle:checked+#menu {
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-menu,
+        .dropdown:active .dropdown-menu {
+            display: block;
+        }
+
+        .FirstSlide {
+            background-image: url('/img/agency-slider-01.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            /* height: 100vh; */
+            /* width: 1920px; */
+        }
+
+        .secondSlide {
+            background-image: url('/img/agency-slider-02.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            /* height: 100vh; */
+        }
+
+        .thirdSlide {
+            background-image: url('/img/agency-slider-03.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            /* height: 100vh; */
+        }
+
+        body {
+            font-family: 'Montserrat';
+            /* font-size: 22px; */
+        }
+
+        .myFont {
+            font-family: 'Montserrat';
+            font-weight: bolder;
+        }
+
+
+
+        .owl-carousel {
+            position: relative;
+            z-index: 10;
+        }
+
+        .owl-dots {
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+        }
+
+        #default-carousel-2 {
+            cursor: url('/img/add-box-line.png'), auto;
+        }
+
+        @media (max-width: 768px) {
+            .owl-dots {
+                position: absolute;
+                bottom: -6%;
+                left: 40%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <header id="navbar" class="md:px-9 px-4 bg-transparent w-full fixed z-50 py-4 md:py-5">
+        <div class="container mx-auto flex flex-wrap items-center">
+            <div class="flex-1 flex justify-between items-center">
+                <img src="/img/logo-white.png" class="h-9" alt="">
+            </div>
+
+            <label for="menu-toggle" class="pointer-cursor md:hidden block">
+                <svg class="fill-current text-gray-300 hover:text-white" xmlns="http://www.w3.org/2000/svg" width="20"
+                    height="20" viewBox="0 0 20 20">
+                    <title>menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </label>
+
+            <input class="hidden" type="checkbox" id="menu-toggle" />
+
+            <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+                <nav>
+                    <ul class="md:flex items-center gap-3 justify-between text-[12px] pt-4 md:pt-0">
+                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all"
+                                href="#">ABOUT US</a></li>
+                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all"
+                                href="#">FEATURES</a></li>
+                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all"
+                                href="#">COLORS</a></li>
+                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all"
+                                href="#">DESIGN</a></li>
+                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all"
+                                href="#">REVIEWS</a></li>
+                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all"
+                                href="#">PRODUCT</a></li>
+                        <li>
+                            <button
+                                class="px-4 py-[6px] text-[10px] font-medium bg-white flex justify-between items-center gap-2 hover:bg-gray-300 transition-all duration-300">
+                                <i class="ri-shopping-bag-fill"></i> <span>BUY NOW</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="default-carousel"
+        class="owl-carousel owl-theme w-full md:h-[999px] h-[55vh] cursor-w-resize relative top-0 z-0">
+        <!-- Slide 1 -->
+        <div class="item">
+            <div class="FirstSlide md:h-[999px] h-[60vh] cursor-w-resize">
+                <div class="absolute top-[20%] md:top-[20%] bottom-[50%] px-4 md:px-0 md:left-[7%] flex flex-col gap-4">
+                    <h1 class="text-white font-bold text-3xl md:text-7xl">NEW LEVEL <br>
+                        OF SOUND <br>
+                        EXPERIENCE
+                    </h1>
+                    <div class="para-div">
+                        <p class="text-white font-medium text-sm md:text-lg">Lorem Ipsum is simply dummy text of
+                            printing and
+                            industry.
+                            <br class="hidden md:block">Lorem Ipsum the industry's dummy text ever since.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <button
+                            class="py-2 px-6 bg-white hover:bg-gray-300 rounded-full text-[12px] font-medium transition-all duration-200">PURCHASE
+                            NOW >
+                        </button>
+                        <button
+                            class="border-2 border-white hover:border-gray-300 hover:text-gray-300 transition-all duration-200 text-white py-2 px-6 bg-transparent rounded-full text-[12px] font-medium">READ
+                            MORE >
+                        </button>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="item">
+            <div class="secondSlide md:h-[999px] h-[60vh] cursor-w-resize">
+                <div class="absolute top-[20%] md:top-[20%] bottom-[50%] px-4 md:px-0 md:left-[7%] flex flex-col gap-4">
+                    <h1 class="text-white text-3xl md:text-7xl font-bold">FRESH,<br> BEAUTIFUL<br> INNOVATIVE</h1>
+                    <div class="para-div">
+                        <p class="text-white font-medium text-sm md:text-lg">Lorem Ipsum is simply dummy text of
+                            printing and
+                            industry.
+                            <br class="hidden md:block">Lorem Ipsum the industry's dummy text ever since.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <button
+                            class="py-2 px-6 bg-white hover:bg-gray-300 rounded-full text-[12px] font-medium transition-all duration-200">PURCHASE
+                            NOW ></button>
+                        <button
+                            class="border-2 border-white hover:border-gray-300 hover:text-gray-300 transition-all duration-200 text-white py-2 px-6 bg-transparent rounded-full text-[12px] font-medium">READ
+                            MORE ></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Slide 3 -->
+        <div class="item">
+            <div class="thirdSlide cursor-w-resize md:h-[999px] h-[60vh]">
+                <div class="absolute  top-[20%] bottom-[50%] px-4 md:px-0 md:left-[7%] flex flex-col gap-4">
+                    <h1 class="text-white text-3xl md:text-7xl font-bold">THE PRODUCT<br>
+                        OF THE FUTURE<br>
+                    </h1>
+                    <div class="para-div">
+                        <p class="text-white font-medium text-sm md:text-lg">Lorem Ipsum is simply dummy text of
+                            printing and
+                            industry.
+                            <br class="hidden md:block">Lorem Ipsum the industry's dummy text ever since.
+                        </p>
+                    </div>
+
+
+                    <div class="flex gap-4">
+                        <button
+                            class="py-2 px-6 bg-white hover:bg-gray-300 rounded-full text-[12px] font-medium transition-all duration-200">PURCHASE
+                            NOW >
+                        </button>
+                        <button
+                            class="border-2 border-white hover:border-gray-300 hover:text-gray-300 transition-all duration-200 text-white py-2 px-6 bg-transparent rounded-full text-[12px] font-medium">READ
+                            MORE >
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="w-full mt-20 md:flex items-center">
+        <div class="md:w-[50%] w-[100%] text-center md:text-start flex flex-col gap-5 justify-center items-center">
+            <h1 class="md:text-4xl text-2xl font-medium md:w-[80%] w-[100%] ">
+                The best product on the <br class="md:block hidden">
+                market, just for you.
+            </h1>
+            <p class="md:w-[80%] w-[100%] text-lg text-[#474747]">Lorem Ipsum is simply dummy text of the printing and
+                typesetting
+                industry. It has
+                survived not only five
+                centuries.</p>
+            <p class="md:w-[80%] w-[100%] text-sm text-[#707070] md:px-0 p-4">
+                Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a
+                galley of type scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard
+                dummy text ever since the when an unknown printer took a galley of type scrambled.
+            </p>
+
+            <div class="text-start md:w-[80%] w-[100%]">
+                <button
+                    class="py-2 text-[12px] px-4 font-medium border-2 rounded-full border-[#43cbcd] text-[#43cbcd]">CONTINUE
+                    READING </button>
+            </div>
+        </div>
+        <div class="md:w-[50%] w-[100%] flex justify-center items-center text-center">
+            <img src="/img/design-screenshot6.png" alt="" width="85%">
+        </div>
+    </div>
+
+    <div id="default-carousel-2" class="owl-carousel md:mt-7 plusCursor owl-theme w-full relative top-0 z-0">
+        <!-- Slide 1 -->
+        <div class="item">
+            <div class="secSlider1">
+                <img src="/img/agency-work-01.jpg" alt="">
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="item">
+            <div class="secSlider2">
+                <img src="img/agency-work-02.jpg" alt="">
+            </div>
+        </div>
+
+
+        <!-- Slide 3 -->
+        <div class="item">
+            <div class="secSlider3">
+                <img src="/img/agency-work-03.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="secSlider4 h-[40vh]">
+                <img src="/img/agency-work-04.jpg" alt="">
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="w-full flex justify-around p-[110px]">
+        <div class="w-[50%] flex items-center justify-center">
+            <img src="/img/content-50.png" alt="" width="100%">
+        </div>
+        <div class="w-[50%] flex flex-col gap-5 justify-center items-center">
+            <h1 class="text-3xl font-medium w-full md:w-[80%]">
+                Flexibility and design <br>
+                possibilities at their best.
+            </h1>
+            <p class="w-[80%] text-lg text-[#474747]">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. It has
+                survived not only five
+                centuries.</p>
+            <p class="w-[80%] text-sm text-[#707070]">
+                Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a
+                galley of type scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard
+                dummy text ever since the when an unknown printer took a galley of type scrambled.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="grid grid-cols-2 h-[1338px]">
+
+        <!-- First Grid Column -->
+        <div class="bg-[#46eff0]  flex flex-col justify-center items-center gap-12">
+            <div class="wrapp w-auto mx-auto flex gap-4  justify-center">
+                <div>
+                    <h1 class="text-4xl font-bold">01.</h1>
+                </div>
+                <div class="hANdp flex flex-col gap-2 w-[55%]">
+                    <h2 class="text-2xl font-medium">
+                        The best sound.
+                    </h2>
+                    <p class="text-sm">Put it on repeat and stay unplugged all day thanks to up to 40 hours of battery
+                        life. You can
+                        keep track of the battery with the illuminated LED fuel gauge located on the headphone itself.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapp w-auto mx-auto flex gap-4 justify-center">
+                <div>
+                    <h1 class="text-4xl font-bold">02.</h1>
+                </div>
+                <div class="hANdp flex flex-col gap-2 w-[55%]">
+                    <h2 class="text-2xl font-medium">
+                        Unbelievable doom.
+                    </h2>
+                    <p class="text-sm">Put it on repeat and stay unplugged all day thanks to up to 40 hours of battery
+                        life. You can
+                        keep track of the battery with the illuminated LED fuel gauge located on the headphone itself.
+                    </p>
+                </div>
+            </div>
+            <div class="wrapp w-auto mx-auto flex gap-4 justify-center">
+                <div>
+                    <h1 class="text-4xl font-bold">01.</h1>
+                </div>
+                <div class="hANdp flex flex-col gap-2 w-[55%]">
+                    <h2 class="text-2xl font-medium">
+                        The best sound.
+                    </h2>
+                    <p class="text-sm">Put it on repeat and stay unplugged all day thanks to up to 40 hours of battery
+                        life. You can
+                        keep track of the battery with the illuminated LED fuel gauge located on the headphone itself.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Second Grid Column -->
+        <div class="w-[100%]"
+            style="background-image: url('/img/hero-bg38.jpg'); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- jQuery (necessary for Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#default-carousel").owlCarousel({
+                items: 1,               // Number of items on large screens
+                loop: false,             // Infinite loop
+                // 5 seconds delay between slides
+                // Pause on hover
+                dots: true,             // Show dots
+                responsive: {
+                    0: { items: 1 },      // 1 item on small screens
+                    600: { items: 1 },    // 1 item on medium screens
+                    1000: { items: 1 },   // 1 item on large screens
+                }
+            });
+        });
+        $(document).ready(function () {
+            $("#default-carousel-2").owlCarousel({
+                items: 3,               // Number of items on large screens
+                loop: false,             // Infinite loop
+                // 5 seconds delay between slides
+                // Pause on hover
+                dots: true,             // Show dots
+                responsive: {
+                    0: { items: 1 },      // 1 item on small screens
+                    600: { items: 2 },    // 1 item on medium screens
+                    1000: { items: 3 },   // 1 item on large screens
+                }
+            });
+        });
+
+        document.querySelector("#default-carousel-2").addEventListener('mouseenter', () => {
+
+        })
+
+    </script>
+
+
+</body>
+
+</html>
