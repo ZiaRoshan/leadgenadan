@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="output.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
@@ -77,6 +80,31 @@
             position: absolute;
             bottom: 5%;
             left: 50%;
+            background-color: transparent;
+
+        }
+
+        .owl-theme .owl-dots .owl-dot span {
+            background-color: transparent;
+            border: 2px solid #fff;
+        }
+
+        #default-carousel-3 .owl-dots .owl-dot.active span {
+            background-color: #000;
+            /* Example style */
+            border: 1px solid #000;
+            /* Example style */
+        }
+
+        #default-carousel-3 .owl-dots .owl-dot span {
+            background-color: transparent;
+            /* Example style */
+            border: 1px solid #000;
+            /* Example style */
+        }
+
+        .owl-theme .owl-dots .owl-dot.active span {
+            background-color: #fff;
         }
 
         #default-carousel-2 {
@@ -86,24 +114,82 @@
         @media (max-width: 768px) {
             .owl-dots {
                 position: absolute;
-                bottom: -6%;
+                bottom: 0%;
                 left: 40%;
             }
         }
+
+        .custom-container {
+            padding: 0px 100px;
+        }
+
+        .container {
+            width: 100%;
+            padding-right: var(--bs-gutter-x, 1.5rem);
+            padding-left: var(--bs-gutter-x, 1.5rem);
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .container {
+                max-width: 1320px;
+            }
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        @media (max-width: 768px) {
+            #navul {
+                min-width: 100vw;
+                position: absolute;
+                left: 0%;
+            }
+        }
+
+        /* @media (max-width: 768px) {
+            #imglg {
+                display: none;
+            }
+        } */
     </style>
 </head>
 
 <body>
 
-
-
-    <header id="navbar" class="md:px-9 px-4 bg-transparent w-full fixed z-50 py-4 md:py-5">
-        <div class="container mx-auto flex flex-wrap items-center">
+    <header id="navbar" class="md:px-9 px-4 bg-transparent w-[100%] fixed z-50 py-4 md:py-5">
+        <div class="mx-auto flex flex-wrap items-center">
             <div class="flex-1 flex justify-between items-center">
                 <img src="/img/logo-white.png" class="h-9" alt="">
             </div>
 
-            <label for="menu-toggle" class="pointer-cursor md:hidden block">
+            <label for="menu-toggle" class="pointer-cursor md:hidden block bg-black p-2">
                 <svg class="fill-current text-gray-300 hover:text-white" xmlns="http://www.w3.org/2000/svg" width="20"
                     height="20" viewBox="0 0 20 20">
                     <title>menu</title>
@@ -115,22 +201,23 @@
 
             <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
                 <nav>
-                    <ul class="md:flex items-center gap-3 justify-between text-[12px] pt-4 md:pt-0">
-                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all"
+                    <ul id="navul"
+                        class="md:flex md:bg-transparent mt-4 md:mt-0  bg-[#000000c7]  items-center gap-3 justify-between text-[12px] md:p-0 p-6 pt-8 md:pt-0 placeholder-shown:">
+                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all md:border-none border-b border-gray-700 md:mt-0 mt-3"
                                 href="#">ABOUT US</a></li>
-                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all"
+                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all md:border-none border-b border-gray-700 md:mt-0 mt-3"
                                 href="#">FEATURES</a></li>
-                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all"
+                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all md:border-none border-b border-gray-700 md:mt-0 mt-3"
                                 href="#">COLORS</a></li>
-                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all"
+                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all md:border-none border-b border-gray-700 md:mt-0 mt-3"
                                 href="#">DESIGN</a></li>
-                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all"
+                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all md:border-none border-b border-gray-700 md:mt-0 mt-3"
                                 href="#">REVIEWS</a></li>
-                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all"
+                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all md:border-none md:mt-0 mt-3"
                                 href="#">PRODUCT</a></li>
                         <li>
                             <button
-                                class="px-4 py-[6px] text-[10px] font-medium bg-white flex justify-between items-center gap-2 hover:bg-gray-300 transition-all duration-300">
+                                class="px-4 py-[6px] text-[10px] font-medium bg-white flex justify-between items-center gap-2 hover:bg-gray-300 transition-all duration-300 md:mt-0 mt-4">
                                 <i class="ri-shopping-bag-fill"></i> <span>BUY NOW</span>
                             </button>
                         </li>
@@ -141,17 +228,19 @@
     </header>
 
     <div id="default-carousel"
-        class="owl-carousel owl-theme w-full md:h-[999px] h-[55vh] cursor-w-resize relative top-0 z-0">
+        class="owl-carousel owl-theme w-full md:h-[999px] h-[70vh] cursor-w-resize relative top-0 z-0">
         <!-- Slide 1 -->
         <div class="item">
-            <div class="FirstSlide md:h-[999px] h-[60vh] cursor-w-resize">
-                <div class="absolute top-[20%] md:top-[20%] bottom-[50%] px-4 md:px-0 md:left-[7%] flex flex-col gap-4">
-                    <h1 class="text-white font-bold text-3xl md:text-7xl">NEW LEVEL <br>
+            <div class="FirstSlide md:h-[999px] h-[75vh] cursor-w-resize">
+                <div class=" container md:px-0 h-[95%] flex flex-col gap-5 justify-center">
+                    <h1 class="text-white md:text-[80px] md:leading-[4.5rem] font-bold text-[30px] leading-[2rem]">NEW
+                        LEVEL <br>
                         OF SOUND <br>
-                        EXPERIENCE
+                        EXPERIENCE.
                     </h1>
                     <div class="para-div">
-                        <p class="text-white font-medium text-sm md:text-lg">Lorem Ipsum is simply dummy text of
+                        <p class="text-white font-semibold text-sm md:text-lg md:w-[80%]">Lorem Ipsum is simply dummy
+                            text of
                             printing and
                             industry.
                             <br class="hidden md:block">Lorem Ipsum the industry's dummy text ever since.
@@ -170,17 +259,16 @@
                     </div>
 
                 </div>
-
-
             </div>
         </div>
         <!-- Slide 2 -->
         <div class="item">
-            <div class="secondSlide md:h-[999px] h-[60vh] cursor-w-resize">
-                <div class="absolute top-[20%] md:top-[20%] bottom-[50%] px-4 md:px-0 md:left-[7%] flex flex-col gap-4">
-                    <h1 class="text-white text-3xl md:text-7xl font-bold">FRESH,<br> BEAUTIFUL<br> INNOVATIVE</h1>
+            <div class="secondSlide md:h-[999px] h-[75vh] cursor-w-resize">
+                <div class="container md:px-0 h-[95%] flex flex-col gap-4 justify-center">
+                    <h1 class="text-white md:text-[80px] md:leading-[4.5rem] font-bold text-[30px] leading-[2rem]">
+                        FRESH,<br> BEAUTIFUL<br> INNOVATIVE</h1>
                     <div class="para-div">
-                        <p class="text-white font-medium text-sm md:text-lg">Lorem Ipsum is simply dummy text of
+                        <p class="text-white font-semibold text-sm md:text-lg">Lorem Ipsum is simply dummy text of
                             printing and
                             industry.
                             <br class="hidden md:block">Lorem Ipsum the industry's dummy text ever since.
@@ -197,18 +285,20 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
 
         <!-- Slide 3 -->
         <div class="item">
-            <div class="thirdSlide cursor-w-resize md:h-[999px] h-[60vh]">
-                <div class="absolute  top-[20%] bottom-[50%] px-4 md:px-0 md:left-[7%] flex flex-col gap-4">
-                    <h1 class="text-white text-3xl md:text-7xl font-bold">THE PRODUCT<br>
+            <div class="thirdSlide cursor-w-resize md:h-[999px] h-[75vh]">
+                <div class="container md:px-0 h-[95%] flex flex-col gap-4 justify-center">
+                    <h1 class="text-white md:text-[80px] md:leading-[4.5rem] font-bold text-[30px] leading-[2rem]">THE
+                        PRODUCT<br>
                         OF THE FUTURE<br>
                     </h1>
                     <div class="para-div">
-                        <p class="text-white font-medium text-sm md:text-lg">Lorem Ipsum is simply dummy text of
+                        <p class="text-white font-semibold text-sm md:text-lg">Lorem Ipsum is simply dummy text of
                             printing and
                             industry.
                             <br class="hidden md:block">Lorem Ipsum the industry's dummy text ever since.
@@ -234,31 +324,33 @@
 
     </div>
 
-    <div class="w-full mt-20 md:flex items-center">
-        <div class="md:w-[50%] w-[100%] text-center md:text-start flex flex-col gap-5 justify-center items-center">
-            <h1 class="md:text-4xl text-2xl font-medium md:w-[80%] w-[100%] ">
-                The best product on the <br class="md:block hidden">
+    <div class="container md:mt-20 md:flex items-center pt-[110px] pb-[110px]">
+        <div class="md:w-[50%] w-[100%] text-center md:text-start flex flex-col gap-4">
+            <h1 class="md:text-4xl text-[25px] font-medium md:w-[90%] w-[100%] text-[#282828] leading-8">
+                The best product on the
                 market, just for you.
             </h1>
-            <p class="md:w-[80%] w-[100%] text-lg text-[#474747]">Lorem Ipsum is simply dummy text of the printing and
+            <p class="md:w-[90%] w-[100%] md:text-lg text-[17px] text-[#474747]">Lorem Ipsum is simply dummy text of the
+                printing and
                 typesetting
                 industry. It has
                 survived not only five
                 centuries.</p>
-            <p class="md:w-[80%] w-[100%] text-sm text-[#707070] md:px-0 p-4">
+            <p
+                class="md:w-[90%] w-[100%] text-[14px] leading-[24px] md:text-sm md:leading-[25px] text-[#707070] md:px-0">
                 Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a
                 galley of type scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard
                 dummy text ever since the when an unknown printer took a galley of type scrambled.
             </p>
 
-            <div class="text-start md:w-[80%] w-[100%]">
+            <div class="md:text-start text-center md:w-[80%] w-[100%] mt-3 mb-3">
                 <button
                     class="py-2 text-[12px] px-4 font-medium border-2 rounded-full border-[#43cbcd] text-[#43cbcd]">CONTINUE
                     READING </button>
             </div>
         </div>
-        <div class="md:w-[50%] w-[100%] flex justify-center items-center text-center">
-            <img src="/img/design-screenshot6.png" alt="" width="85%">
+        <div class="md:w-[50%] w-[100%] flex justify-center items-center text-center pt-3 md:pt-0">
+            <img src="/img/design-screenshot6.png" alt="" width="100%">
         </div>
     </div>
 
@@ -294,37 +386,43 @@
     </div>
 
 
-    <div class="w-full flex justify-around p-[110px]">
-        <div class="w-[50%] flex items-center justify-center">
+    <div class="container md:flex justify-around pt-[110px] pb-[110px]">
+        <div class="md:w-[50%] w-[100%] flex md:items-center justify-center text-center">
             <img src="/img/content-50.png" alt="" width="100%">
         </div>
-        <div class="w-[50%] flex flex-col gap-5 justify-center items-center">
-            <h1 class="text-3xl font-medium w-full md:w-[80%]">
+        <div class="md:w-[50%] w-[100%] flex flex-col gap-5 justify-center items-center">
+            <h1 class="md:text-4xl text-2xl text-center md:text-start font-medium w-[100%] md:w-[90%] text-[#282828]">
                 Flexibility and design <br>
                 possibilities at their best.
             </h1>
-            <p class="w-[80%] text-lg text-[#474747]">Lorem Ipsum is simply dummy text of the printing and typesetting
+            <p class="md:w-[90%] w-[100%] text-lg text-center md:text-start text-[#474747]">Lorem Ipsum is simply dummy
+                text of the printing and typesetting
                 industry. It has
                 survived not only five
                 centuries.</p>
-            <p class="w-[80%] text-sm text-[#707070]">
+            <p class="md:w-[90%] w-[100%] text-center md:text-start text-sm text-[#707070]">
                 Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a
                 galley of type scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard
                 dummy text ever since the when an unknown printer took a galley of type scrambled.
             </p>
+            <div class="md:text-start text-center md:w-[90%] w-[100%] mt-3">
+                <button
+                    class="py-2 text-[12px] px-4 font-medium border-2 rounded-full border-[#43cbcd] text-[#43cbcd]">CONTINUE
+                    READING </button>
+            </div>
         </div>
 
     </div>
 
-    <div class="grid grid-cols-2 h-[1338px]">
+    <div class="grid md:grid-cols-2 grid-cols-1 md:h-[1338px]">
 
         <!-- First Grid Column -->
-        <div class="bg-[#46eff0]  flex flex-col justify-center items-center gap-12">
-            <div class="wrapp w-auto mx-auto flex gap-4  justify-center">
+        <div class="bg-[#46eff0] md:pt-0 pt-8 md:pb-0 pb-8 flex flex-col justify-center items-center gap-12">
+            <div class="wrapp md:text-start text-center px-2 md:px-0 w-auto mx-auto md:flex gap-4 justify-center">
                 <div>
                     <h1 class="text-4xl font-bold">01.</h1>
                 </div>
-                <div class="hANdp flex flex-col gap-2 w-[55%]">
+                <div class="hANdp flex flex-col gap-2 md:w-[55%] w-[100%]">
                     <h2 class="text-2xl font-medium">
                         The best sound.
                     </h2>
@@ -335,11 +433,11 @@
                 </div>
             </div>
 
-            <div class="wrapp w-auto mx-auto flex gap-4 justify-center">
+            <div class="wrapp md:text-start text-center px-2 md:px-0 w-auto mx-auto md:flex gap-4 justify-center">
                 <div>
                     <h1 class="text-4xl font-bold">02.</h1>
                 </div>
-                <div class="hANdp flex flex-col gap-2 w-[55%]">
+                <div class="hANdp flex flex-col gap-2 md:w-[55%] w-[100%]">
                     <h2 class="text-2xl font-medium">
                         Unbelievable doom.
                     </h2>
@@ -349,17 +447,17 @@
                     </p>
                 </div>
             </div>
-            <div class="wrapp w-auto mx-auto flex gap-4 justify-center">
+            <div class="wrapp md:text-start text-center px-2 md:px-0 w-auto mx-auto md:flex gap-4 justify-center">
                 <div>
-                    <h1 class="text-4xl font-bold">01.</h1>
+                    <h1 class="text-4xl font-bold">03.</h1>
                 </div>
-                <div class="hANdp flex flex-col gap-2 w-[55%]">
+                <div class="hANdp flex flex-col gap-2 md:w-[55%] w-[100%]">
                     <h2 class="text-2xl font-medium">
-                        The best sound.
+                        Drop the bass.
                     </h2>
-                    <p class="text-sm">Put it on repeat and stay unplugged all day thanks to up to 40 hours of battery
-                        life. You can
-                        keep track of the battery with the illuminated LED fuel gauge located on the headphone itself.
+                    <p class="text-sm">The ultimate staple in your headphone closet, Plattan offers a rich, secluded
+                        sound experience, and convenient extras that make life easier. Features a fabric headband,
+                        tangle-free cable, built-in mic/remote.
                     </p>
                 </div>
             </div>
@@ -367,21 +465,368 @@
         </div>
 
         <!-- Second Grid Column -->
-        <div class="w-[100%]"
+        <div class="w-[100%] md:h-[100%] h-[300px]"
             style="background-image: url('/img/hero-bg38.jpg'); background-repeat: no-repeat; background-position: center center; background-size: cover;">
         </div>
 
     </div>
 
+    <div class="container">
+        <div class="text-center flex flex-col gap-4 w-[100%] md:pt-[110px] md:pb-[110px] pt-8 pb-8">
+            <h1 class="md:text-4xl text-[25px] font-medium text-[#282828] leading-8">
+                The new vibrant colors
+            </h1>
+            <p class="text-sm md:w-[70%] w-[100%] mx-auto md:px-8 text-[#474747]">The new fall/winter colors are a bit
+                frozen over,
+                with pale and bleached-out shades that match up with cooler days ahead. Snow Blue, Powder Pink, and
+                Nougat Beige might be nippy to look at, but they’re as friendly to wear as your favorite sweater.</p>
+        </div>
+
+        <div class="hidden md:grid grid-cols-4 pb-[110px]">
+            <img src="/img/application-screenshot-img-01.png" alt="">
+            <img src="/img/application-screenshot-img-02.png" alt="">
+            <img src="/img/application-screenshot-img-03.png" alt="">
+            <img src="/img/application-screenshot-img-04.png" alt="">
+        </div>
+
+
+    </div>
+    <!-- 3rd slider start  -->
+    <div class="md:hidden relative">
+        <div id="default-carousel-3"
+            class=" block owl-carousel owl-theme md:mt-7 plusCursor owl-theme w-full md:hidden relative top-0 z-0">
+            <!-- Slide 1 -->
+            <div class="item">
+                <img src="/img/application-screenshot-img-01.png" alt="">
+            </div>
+            <!-- Slide 2 -->
+            <div class="item">
+                <img src="/img/application-screenshot-img-02.png" alt="">
+            </div>
+            <!-- slide 3  -->
+            <div class="item">
+                <img src="/img/application-screenshot-img-03.png" alt="">
+            </div>
+
+            <!-- slide 4  -->
+            <div class="item">
+                <img src="/img/application-screenshot-img-04.png" alt="">
+            </div>
+
+        </div>
+    </div>
 
 
 
+    <div class="h-[590px]">
+        <div class="item">
+            <div id="imglg" style="background-image: url('/img/fitness-about-bg.jpg'); background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+        height: 590px;">
+                <div class="container w-[100%] md:px-0 h-[100%]" id="hideContainer">
+                    <div id="forheight"
+                        class="grid grid-cols-1 gap-3 bg-[#a78a73] h-[100%] md:w-[58%] w-[100%] z-40 md:p-24 p-14">
+                        <h1 class="text-white text-xl md:leading-[3rem] font-medium md:text-[45px]">Designed for
+                            Sound.
+                            Tuned for Emotion.
+                        </h1>
+                        <h2 class="text-white md:text-xl text-sm">
+                            The award-winning sound and design you’ve come to love from doom.
+                        </h2>
+                        <p class="text-white text-[14px] text-xs">This headphone delivers premium playback with
+                            fine-tuned
+                            acoustics that maximize clarity, breadth, and balance. The comfort-cushion ear cups buffer
+                            outside noise for immersive sound so you can experience music the way it was meant to be
+                            heard.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="/img/banner-2.png" alt="" width="100%">
+    </div>
+
+    <div class="h-[590px]">
+        <div class="item">
+            <div style="background-image: url('/img/hero-bg40.jpg'); background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+        height: 590px;">
+                <div class="container md:px-0 h-[100%]">
+                    <div class="grid grid-cols-1 gap-3 h-[100%] w-[58%] z-40 items-center">
+                        <img src="/img/hero-text.png" alt="">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="pt-[110px] pb-[110px]">
+        <div class="container">
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-16">
+
+                <div class="md:flex items-center gap-7">
+                    <div class="w-[20%]">
+                        <img src="/img/avtar-10.jpg" alt="" class="rounded-full my-auto" width="100%">
+                    </div>
+                    <div class="w-[80%] flex flex-col gap-3">
+                        <p class="text-[14px]">Lorem Ipsum has been the industry's standard dummy text ever since, when
+                            an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p>- NATHAN FORD</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-7">
+                    <div class="w-[20%]">
+                        <img src="/img/avtar-11.jpg" alt="" class="rounded-full my-auto" width="100%">
+                    </div>
+                    <div class="w-[80%] flex flex-col gap-3">
+                        <p class="text-[14px]">Lorem Ipsum has been the industry's standard dummy text ever since, when
+                            an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p>- NATHAN FORD</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-7">
+                    <div class="w-[20%]">
+                        <img src="/img/avtar-12.jpg" alt="" class="rounded-full my-auto" width="100%">
+                    </div>
+                    <div class="w-[80%] flex flex-col gap-3">
+                        <p class="text-[14px]">Lorem Ipsum has been the industry's standard dummy text ever since, when
+                            an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p>- NATHAN FORD</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-7">
+                    <div class="w-[20%]">
+                        <img src="/img/avtar-13.jpg" alt="" class="rounded-full my-auto" width="100%">
+                    </div>
+                    <div class="w-[80%] flex flex-col gap-3">
+                        <p class="text-[14px]">Lorem Ipsum has been the industry's standard dummy text ever since, when
+                            an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p>- NATHAN FORD</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="w-[100%] bg-[#47df84] pt-[60px] pb-[60px] overflow-x-hidden">
+        <div class="container md:flex justify-between items-center">
+            <div>
+                <h1 class="md:text-3xl md:text-start text-center text-xl font-medium text-white">Don’t sleep on all the
+                    latest from doom.</h1>
+            </div>
+            <div>
+                <div class="relative md:mt-0 mt-5">
+                    <input type="text" class="md:pt-[1.5rem] md:pr-[11rem] pb-[1.5rem] pl-[2rem] border-none rounded"
+                        placeholder="* Email Address">
+                    <button class="absolute right-0 px-6 h-[100%] hover:bg-[#47df8452] transition-all duration-300"><i
+                            class="bi bi-envelope text-3xl text-[#47df84]"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-[110px] pb-[110px]">
+        <div class="container">
+            <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-2">
+
+                <div class="flex flex-col justify-center items-center gap-3">
+                    <div>
+                        <img src="/img/product-img-01.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-center text-[#282828] text-sm font-medium">
+                            DOOM STUDIO WIRELESS
+                        </h1>
+                        <h2 class="text-center text-[#848484] text-sm font-medium">
+                            Designed for Sound
+                        </h2>
+                    </div>
+                    <div class="flex gap-3">
+                        <p class="font-semibold text-[#282828]">$399</p>
+                        <p class="line-through font-semibold text-[#282828]">$699</p>
+                    </div>
+
+                    <div>
+                        <button
+                            class="border-2 border-[#43cbcd] px-6 py-2 text-[#43cbcd] font-semibold rounded-full text-[12px]">
+                            BUY NOW >
+                        </button>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-3">
+                    <div>
+                        <img src="/img/product-img-02.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-center text-[#282828] text-sm font-medium">
+                            DOOM STUDIO WIRELESS
+                        </h1>
+                        <h2 class="text-center text-[#848484] text-sm font-medium">
+                            Feel the Music
+                        </h2>
+                    </div>
+                    <div class="flex gap-3">
+                        <p class="font-semibold text-[#282828]">$299</p>
+                        <p class="line-through font-semibold text-[#282828]">$599</p>
+                    </div>
+
+                    <div>
+                        <button
+                            class="border-2 border-[#43cbcd] px-6 py-2 text-[#43cbcd] font-semibold rounded-full text-[12px]">
+                            BUY NOW >
+                        </button>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-3">
+                    <div>
+                        <img src="/img/product-img-03.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-center text-[#282828] text-sm font-medium">
+                            DOOM STUDIO WIRELESS
+                        </h1>
+                        <h2 class="text-center text-[#848484] text-sm font-medium">
+                            Designed for Sound
+                        </h2>
+                    </div>
+                    <div class="flex gap-3">
+                        <p class="font-semibold text-[#282828]">$249</p>
+                        <p class="line-through font-semibold text-[#282828]">$449</p>
+                    </div>
+
+                    <div>
+                        <button
+                            class="border-2 border-[#43cbcd] px-6 py-2 text-[#43cbcd] font-semibold rounded-full text-[12px]">
+                            BUY NOW >
+                        </button>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-3">
+                    <div>
+                        <img src="/img/product-img-04.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-center text-[#282828] text-sm font-medium">
+                            DOOM STUDIO WIRELESS
+                        </h1>
+                        <h2 class="text-center text-[#848484] text-sm font-medium">
+                            Designed for Sound
+                        </h2>
+                    </div>
+                    <div class="flex gap-3">
+                        <p class="font-semibold text-[#282828]">$449</p>
+                        <p class="line-through font-semibold text-[#282828]">$799</p>
+                    </div>
+
+                    <div>
+                        <button
+                            class="border-2 border-[#43cbcd] px-6 py-2 text-[#43cbcd] font-semibold rounded-full text-[12px]">
+                            BUY NOW >
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="pt-[60px] pb-[60px] bg-[#f6f6f6] border-1 border-gray-500">
+        <div class="container">
+            <div class="grid md:grid-cols-5 grid-cols-1">
+                <div class="flex flex-col justify-center items-center gap-5 w-[100%]">
+                    <div class="flex flex-col gap-2">
+                        <div class="text-center w-[100%]">
+                            <img src="/img/logo (1).png" alt="" width="70%">
+                            <p class="text-[12px]">301 The Greenhouse, Custard Factory, London, E2 8DY.</p>
+                        </div>
+
+
+                    </div>
+                    <div class="flex gap-3 w-[100%] mx-auto">
+                        <i class="bi bi-facebook text-[#4e4e4e]"></i>
+                        <i class="bi bi-twitter text-[#4e4e4e]"></i>
+                        <i class="bi bi-google text-[#4e4e4e]"></i>
+                        <i class="bi bi-pinterest text-[#4e4e4e]"></i>
+                        <i class="bi bi-linkedin text-[#4e4e4e]"></i>
+                    </div>
+
+                </div>
+                <div class="mx-auto">
+
+                    <div>
+                        <h2 class="text-[14px] font-semibold text-center">Company</h2>
+                    </div>
+
+                    <div class="mt-3 text-[#848484]">
+                        <p class="text-[13px] text-start mt-2">About Us</p>
+                        <p class="text-[13px] text-start mt-2">Features</p>
+                        <p class="text-[13px] text-start mt-2">Design</p>
+                    </div>
+
+                </div>
+                <div class="mx-auto">
+
+                    <div>
+                        <h2 class="text-[14px] font-semibold text-center">Useful Links</h2>
+                    </div>
+
+                    <div class="mt-3 text-[#848484]">
+                        <p class="text-[13px] text-start mt-2">Gallery</p>
+                        <p class="text-[13px] text-start mt-2">Color</p>
+                        <p class="text-[13px] text-start mt-2">Quick Order</p>
+                    </div>
+
+                </div>
+                <div class="mx-auto">
+
+                    <div>
+                        <h2 class="text-[14px] font-semibold text-center">Follow US</h2>
+                    </div>
+
+                    <div class="mt-3 text-[#848484]">
+                        <p class="text-[13px] text-start mt-2">Facebook</p>
+                        <p class="text-[13px] text-start mt-2">Twitter</p>
+                        <p class="text-[13px] text-start mt-2">Google plus</p>
+                    </div>
+
+                </div>
+                <div>
+                    <div>
+                        <h1 class="text-[14px] font-semibold ">Newsletter Signup</h1>
+                    </div>
+                    <div>
+                        <p class="text-[12px] text-start mt-2">Sign up for the latest news & offers.</p>
+                    </div>
+
+                    <div class="relative mt-3">
+                        <input type="text" placeholder="Your email address"
+                            class="border-none bg-white border-1 pr-[75px] rounded text-[12px] relative focus:border-black"
+                            style="border: 1px solid #cecece;">
+                        <button class="absolute top-0 right-0 h-[100%] "><i
+                                class="bi bi-envelope text-[#848484]"></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery (necessary for Owl Carousel) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 
@@ -407,6 +852,7 @@
                 }
             });
         });
+
         $(document).ready(function () {
             $("#default-carousel-2").owlCarousel({
                 items: 3,               // Number of items on large screens
@@ -425,6 +871,49 @@
         document.querySelector("#default-carousel-2").addEventListener('mouseenter', () => {
 
         })
+
+        $(document).ready(function () {
+            $("#default-carousel-3").owlCarousel({
+                items: 3,               // Number of items on large screens
+                loop: false,             // Infinite loop
+                // 5 seconds delay between slides
+                // Pause on hover
+                dots: true,             // Show dots
+                responsive: {
+                    0: { items: 1 },      // 1 item on small screens
+                    600: { items: 2 },    // 1 item on medium screens
+                    1000: { items: 3 },   // 1 item on large screens
+                }
+            });
+        });
+
+        document.querySelector("#default-carousel-2").addEventListener('mouseenter', () => {
+
+        })
+
+        $(document).ready(function () {
+            var mediaQuery = window.matchMedia("(max-width: 850px)");
+
+            function handleMediaQueryChange(e) {
+                if (e.matches) {
+                    // document.getElementById('hideContainer').classList.remove('container')
+                    $("#hideContainer").removeClass('container');
+                    $("#hideContainer").removeClass('h-[100%]');
+                    $("#imglg").css("background-image", "none");
+
+                } else {
+                    $("#forheight").css("height", "100%");
+                    $("#hideContainer").addClass('container');
+                    $("imglg").css("bacground-image", "url('/img/fitness-about-bg.jpg')")
+                }
+            }
+
+            // Initial check on page load
+            handleMediaQueryChange(mediaQuery);
+
+            // Add event listener to detect changes in the media query
+            mediaQuery.addEventListener("change", handleMediaQueryChange);
+        });
 
     </script>
 
