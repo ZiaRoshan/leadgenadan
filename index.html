@@ -35,33 +35,28 @@
         }
 
         .FirstSlide {
-            background-image: url('/img/agency-slider-01.jpg');
+            background-image: url('./img/agency-slider-01.jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            /* height: 100vh; */
-            /* width: 1920px; */
         }
 
         .secondSlide {
-            background-image: url('/img/agency-slider-02.jpg');
+            background-image: url('./img/agency-slider-02.jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            /* height: 100vh; */
         }
 
         .thirdSlide {
-            background-image: url('/img/agency-slider-03.jpg');
+            background-image: url('./img/agency-slider-03.jpg');
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
-            /* height: 100vh; */
         }
 
         body {
             font-family: 'Montserrat';
-            /* font-size: 22px; */
         }
 
         .myFont {
@@ -69,19 +64,24 @@
             font-weight: bolder;
         }
 
-
-
         .owl-carousel {
             position: relative;
             z-index: 10;
         }
 
-        .owl-dots {
+        /* .owl-dots {
             position: absolute;
             bottom: 5%;
             left: 50%;
             background-color: transparent;
 
+        } */
+        .owl-dots {
+            position: absolute;
+            bottom: 3%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
         }
 
         .owl-theme .owl-dots .owl-dot span {
@@ -91,32 +91,26 @@
 
         #default-carousel-3 .owl-dots .owl-dot.active span {
             background-color: #000;
-            /* Example style */
             border: 1px solid #000;
-            /* Example style */
         }
 
         #default-carousel-3 .owl-dots .owl-dot span {
             background-color: transparent;
-            /* Example style */
             border: 1px solid #000;
-            /* Example style */
+            position: static;
+        }
+
+        #default-carousel-3 .owl-dots {
+            bottom: 3%;
         }
 
         .owl-theme .owl-dots .owl-dot.active span {
             background-color: #fff;
+
         }
 
         #default-carousel-2 {
-            cursor: url('/img/add-box-line.png'), auto;
-        }
-
-        @media (max-width: 768px) {
-            .owl-dots {
-                position: absolute;
-                bottom: 0%;
-                left: 40%;
-            }
+            cursor: url('./img/add-box-line.png'), auto;
         }
 
         .custom-container {
@@ -165,28 +159,22 @@
             overflow-x: hidden;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 820px) {
             #navul {
                 min-width: 100vw;
                 position: absolute;
                 left: 0%;
             }
         }
-
-        /* @media (max-width: 768px) {
-            #imglg {
-                display: none;
-            }
-        } */
     </style>
 </head>
 
 <body>
-
+    <!-- Navbar  -->
     <header id="navbar" class="md:px-9 px-4 bg-transparent w-[100%] fixed z-50 py-4 md:py-5">
         <div class="mx-auto flex flex-wrap items-center">
             <div class="flex-1 flex justify-between items-center">
-                <img src="/img/logo-white.png" class="h-9" alt="">
+                <img src="./img/logo-white.png" class="h-9" alt="">
             </div>
 
             <label for="menu-toggle" class="pointer-cursor md:hidden block bg-black p-2">
@@ -202,7 +190,7 @@
             <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
                 <nav>
                     <ul id="navul"
-                        class="md:flex md:bg-transparent mt-4 md:mt-0  bg-[#000000c7]  items-center gap-3 justify-between text-[12px] md:p-0 p-6 pt-8 md:pt-0 placeholder-shown:">
+                        class="md:flex md:bg-transparent mt-4 md:mt-0  bg-[#000000e3]  items-center gap-3 justify-between text-[12px] md:p-0 p-6 pt-8 md:pt-0 placeholder-shown:">
                         <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all md:border-none border-b border-gray-700 md:mt-0 mt-3"
                                 href="#">ABOUT US</a></li>
                         <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all md:border-none border-b border-gray-700 md:mt-0 mt-3"
@@ -226,13 +214,13 @@
             </div>
         </div>
     </header>
-
-    <div id="default-carousel"
-        class="owl-carousel owl-theme w-full md:h-[999px] h-[70vh] cursor-w-resize relative top-0 z-0">
+    <!-- Navbar end  -->
+    <!-- first Slider  -->
+    <div id="default-carousel" class="owl-carousel owl-theme w-full md:h-[999px] h-[70vh] cursor-w-resize top-0 z-0">
         <!-- Slide 1 -->
         <div class="item">
             <div class="FirstSlide md:h-[999px] h-[75vh] cursor-w-resize">
-                <div class=" container md:px-0 h-[95%] flex flex-col gap-5 justify-center">
+                <div class=" container md:px-0 h-[95%] flex flex-col gap-5 justify-center relative">
                     <h1 class="text-white md:text-[80px] md:leading-[4.5rem] font-bold text-[30px] leading-[2rem]">NEW
                         LEVEL <br>
                         OF SOUND <br>
@@ -323,7 +311,8 @@
 
 
     </div>
-
+    <!-- first Slider end  -->
+    <!-- section 1  -->
     <div class="container md:mt-20 md:flex items-center pt-[110px] pb-[110px]">
         <div class="md:w-[50%] w-[100%] text-center md:text-start flex flex-col gap-4">
             <h1 class="md:text-4xl text-[25px] font-medium md:w-[90%] w-[100%] text-[#282828] leading-8">
@@ -350,21 +339,22 @@
             </div>
         </div>
         <div class="md:w-[50%] w-[100%] flex justify-center items-center text-center pt-3 md:pt-0">
-            <img src="/img/design-screenshot6.png" alt="" width="100%">
+            <img src="./img/design-screenshot6.png" alt="" width="100%">
         </div>
     </div>
-
+    <!-- section 1 end  -->
+    <!-- second slider  -->
     <div id="default-carousel-2" class="owl-carousel md:mt-7 plusCursor owl-theme w-full relative top-0 z-0">
         <!-- Slide 1 -->
         <div class="item">
             <div class="secSlider1">
-                <img src="/img/agency-work-01.jpg" alt="">
+                <img src="./img/agency-work-01.jpg" alt="">
             </div>
         </div>
         <!-- Slide 2 -->
         <div class="item">
             <div class="secSlider2">
-                <img src="img/agency-work-02.jpg" alt="">
+                <img src="./img/agency-work-02.jpg" alt="">
             </div>
         </div>
 
@@ -372,23 +362,23 @@
         <!-- Slide 3 -->
         <div class="item">
             <div class="secSlider3">
-                <img src="/img/agency-work-03.jpg" alt="">
+                <img src="./img/agency-work-03.jpg" alt="">
             </div>
         </div>
 
         <div class="item">
             <div class="secSlider4 h-[40vh]">
-                <img src="/img/agency-work-04.jpg" alt="">
+                <img src="./img/agency-work-04.jpg" alt="">
             </div>
         </div>
 
 
     </div>
-
-
+    <!-- second slider end -->
+    <!-- section 2 -->
     <div class="container md:flex justify-around pt-[110px] pb-[110px]">
         <div class="md:w-[50%] w-[100%] flex md:items-center justify-center text-center">
-            <img src="/img/content-50.png" alt="" width="100%">
+            <img src="./img/content-50.png" alt="" width="100%">
         </div>
         <div class="md:w-[50%] w-[100%] flex flex-col gap-5 justify-center items-center">
             <h1 class="md:text-4xl text-2xl text-center md:text-start font-medium w-[100%] md:w-[90%] text-[#282828]">
@@ -413,7 +403,8 @@
         </div>
 
     </div>
-
+    <!-- section 2 end -->
+    <!-- section 3 -->
     <div class="grid md:grid-cols-2 grid-cols-1 md:h-[1338px]">
 
         <!-- First Grid Column -->
@@ -466,11 +457,12 @@
 
         <!-- Second Grid Column -->
         <div class="w-[100%] md:h-[100%] h-[300px]"
-            style="background-image: url('/img/hero-bg38.jpg'); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+            style="background-image: url('./img/hero-bg38.jpg'); background-repeat: no-repeat; background-position: center center; background-size: cover;">
         </div>
 
     </div>
-
+    <!-- section 3 end -->
+    <!-- section 4 -->
     <div class="container">
         <div class="text-center flex flex-col gap-4 w-[100%] md:pt-[110px] md:pb-[110px] pt-8 pb-8">
             <h1 class="md:text-4xl text-[25px] font-medium text-[#282828] leading-8">
@@ -483,58 +475,58 @@
         </div>
 
         <div class="hidden md:grid grid-cols-4 pb-[110px]">
-            <img src="/img/application-screenshot-img-01.png" alt="">
-            <img src="/img/application-screenshot-img-02.png" alt="">
-            <img src="/img/application-screenshot-img-03.png" alt="">
-            <img src="/img/application-screenshot-img-04.png" alt="">
+            <img src="./img/application-screenshot-img-01.png" alt="">
+            <img src="./img/application-screenshot-img-02.png" alt="">
+            <img src="./img/application-screenshot-img-03.png" alt="">
+            <img src="./img/application-screenshot-img-04.png" alt="">
         </div>
 
 
     </div>
+    <!-- section 4 end -->
     <!-- 3rd slider start  -->
     <div class="md:hidden relative">
         <div id="default-carousel-3"
-            class=" block owl-carousel owl-theme md:mt-7 plusCursor owl-theme w-full md:hidden relative top-0 z-0">
+            class=" block owl-carousel h-[750px] owl-theme md:mt-7 plusCursor owl-theme md:hidden relative top-0 z-0">
             <!-- Slide 1 -->
             <div class="item">
-                <img src="/img/application-screenshot-img-01.png" alt="">
+                <img src="./img/application-screenshot-img-01.png" alt="" class="mx-auto">
             </div>
             <!-- Slide 2 -->
             <div class="item">
-                <img src="/img/application-screenshot-img-02.png" alt="">
+                <img src="./img/application-screenshot-img-02.png" alt="">
             </div>
             <!-- slide 3  -->
             <div class="item">
-                <img src="/img/application-screenshot-img-03.png" alt="">
+                <img src="./img/application-screenshot-img-03.png" alt="">
             </div>
 
             <!-- slide 4  -->
             <div class="item">
-                <img src="/img/application-screenshot-img-04.png" alt="">
+                <img src="./img/application-screenshot-img-04.png" alt="">
             </div>
 
         </div>
     </div>
+    <!-- 3rd slider end  -->
 
-
-
-    <div class="h-[590px]">
+    <div class="md:h-[590px]" id="mainDiv">
         <div class="item">
-            <div id="imglg" style="background-image: url('/img/fitness-about-bg.jpg'); background-repeat: no-repeat;
-        background-position: center;
+            <div id="imglg" style="background: linear-gradient(rgba(35, 31, 41, 0), rgba(35, 31, 41, 0)) repeat scroll 0% 0%, transparent url(images/bg-image/hero-bg40.jpg) repeat scroll 0% 0%;
         background-size: cover; 
-        height: 590px;">
-                <div class="container w-[100%] md:px-0 h-[100%]" id="hideContainer">
+        ">
+                <div class="container md:px-0 h-[100%]" id="hideContainer">
                     <div id="forheight"
-                        class="grid grid-cols-1 gap-3 bg-[#a78a73] h-[100%] md:w-[58%] w-[100%] z-40 md:p-24 p-14">
-                        <h1 class="text-white text-xl md:leading-[3rem] font-medium md:text-[45px]">Designed for
+                        class="grid grid-cols-1 gap-4 bg-[#a78a73] h-[100%] md:w-[58%] w-[100%] z-40 md:p-24 p-8 pt-10 pb-10">
+                        <h1 class="text-white text-[27px] leading-8 md:leading-[3rem] font-medium md:text-[45px]">
+                            Designed for
                             Sound.
                             Tuned for Emotion.
                         </h1>
-                        <h2 class="text-white md:text-xl text-sm">
+                        <h2 class="text-white md:text-xl text-lg">
                             The award-winning sound and design you’ve come to love from doom.
                         </h2>
-                        <p class="text-white text-[14px] text-xs">This headphone delivers premium playback with
+                        <p class="text-white text-[14px] text-sm">This headphone delivers premium playback with
                             fine-tuned
                             acoustics that maximize clarity, breadth, and balance. The comfort-cushion ear cups buffer
                             outside noise for immersive sound so you can experience music the way it was meant to be
@@ -546,19 +538,23 @@
         </div>
     </div>
 
-    <div class="container">
-        <img src="/img/banner-2.png" alt="" width="100%">
+    <div class="pt-[60px] pb-[60px]">
+        <div class="container">
+            <img src="./img/banner-2.png" alt="" width="100%">
+        </div>
+
     </div>
+
 
     <div class="h-[590px]">
         <div class="item">
-            <div style="background-image: url('/img/hero-bg40.jpg'); background-repeat: no-repeat;
+            <div style="background-image: url('./img/hero-bg40.jpg'); background-repeat: no-repeat;
         background-position: center;
         background-size: cover; 
         height: 590px;">
                 <div class="container md:px-0 h-[100%]">
                     <div class="grid grid-cols-1 gap-3 h-[100%] w-[58%] z-40 items-center">
-                        <img src="/img/hero-text.png" alt="">
+                        <img src="./img/hero-text.png" alt="">
 
                     </div>
 
@@ -574,7 +570,7 @@
 
                 <div class="md:flex items-center gap-7">
                     <div class="w-[20%]">
-                        <img src="/img/avtar-10.jpg" alt="" class="rounded-full my-auto" width="100%">
+                        <img src="./img/avtar-10.jpg" alt="" class="rounded-full my-auto" width="100%">
                     </div>
                     <div class="w-[80%] flex flex-col gap-3">
                         <p class="text-[14px]">Lorem Ipsum has been the industry's standard dummy text ever since, when
@@ -584,7 +580,7 @@
                 </div>
                 <div class="flex items-center gap-7">
                     <div class="w-[20%]">
-                        <img src="/img/avtar-11.jpg" alt="" class="rounded-full my-auto" width="100%">
+                        <img src="./img/avtar-11.jpg" alt="" class="rounded-full my-auto" width="100%">
                     </div>
                     <div class="w-[80%] flex flex-col gap-3">
                         <p class="text-[14px]">Lorem Ipsum has been the industry's standard dummy text ever since, when
@@ -594,7 +590,7 @@
                 </div>
                 <div class="flex items-center gap-7">
                     <div class="w-[20%]">
-                        <img src="/img/avtar-12.jpg" alt="" class="rounded-full my-auto" width="100%">
+                        <img src="./img/avtar-12.jpg" alt="" class="rounded-full my-auto" width="100%">
                     </div>
                     <div class="w-[80%] flex flex-col gap-3">
                         <p class="text-[14px]">Lorem Ipsum has been the industry's standard dummy text ever since, when
@@ -604,7 +600,7 @@
                 </div>
                 <div class="flex items-center gap-7">
                     <div class="w-[20%]">
-                        <img src="/img/avtar-13.jpg" alt="" class="rounded-full my-auto" width="100%">
+                        <img src="./img/avtar-13.jpg" alt="" class="rounded-full my-auto" width="100%">
                     </div>
                     <div class="w-[80%] flex flex-col gap-3">
                         <p class="text-[14px]">Lorem Ipsum has been the industry's standard dummy text ever since, when
@@ -640,7 +636,7 @@
 
                 <div class="flex flex-col justify-center items-center gap-3">
                     <div>
-                        <img src="/img/product-img-01.png" alt="">
+                        <img src="./img/product-img-01.png" alt="">
                     </div>
                     <div>
                         <h1 class="text-center text-[#282828] text-sm font-medium">
@@ -664,7 +660,7 @@
                 </div>
                 <div class="flex flex-col justify-center items-center gap-3">
                     <div>
-                        <img src="/img/product-img-02.png" alt="">
+                        <img src="./img/product-img-02.png" alt="">
                     </div>
                     <div>
                         <h1 class="text-center text-[#282828] text-sm font-medium">
@@ -688,7 +684,7 @@
                 </div>
                 <div class="flex flex-col justify-center items-center gap-3">
                     <div>
-                        <img src="/img/product-img-03.png" alt="">
+                        <img src="./img/product-img-03.png" alt="">
                     </div>
                     <div>
                         <h1 class="text-center text-[#282828] text-sm font-medium">
@@ -712,7 +708,7 @@
                 </div>
                 <div class="flex flex-col justify-center items-center gap-3">
                     <div>
-                        <img src="/img/product-img-04.png" alt="">
+                        <img src="./img/product-img-04.png" alt="">
                     </div>
                     <div>
                         <h1 class="text-center text-[#282828] text-sm font-medium">
@@ -746,7 +742,7 @@
                 <div class="flex flex-col justify-center items-center gap-5 w-[100%]">
                     <div class="flex flex-col gap-2">
                         <div class="text-center w-[100%]">
-                            <img src="/img/logo (1).png" alt="" width="70%">
+                            <img src="./img/logo (1).png" alt="" width="70%">
                             <p class="text-[12px]">301 The Greenhouse, Custard Factory, London, E2 8DY.</p>
                         </div>
 
@@ -900,18 +896,23 @@
                     $("#hideContainer").removeClass('container');
                     $("#hideContainer").removeClass('h-[100%]');
                     $("#imglg").css("background-image", "none");
+                    $("#imglg").css("height", "auto");
+                    $("#mainDiv").removeClass('h-[590px]')
+                    $("#forheight").removeClass('h-[100%]')
 
                 } else {
                     $("#forheight").css("height", "100%");
                     $("#hideContainer").addClass('container');
-                    $("imglg").css("bacground-image", "url('/img/fitness-about-bg.jpg')")
+                    $("#hideContainer").addClass('h-[100%]');
+                    $("#imglg").css("background-image", "url('./img/fitness-about-bg.jpg')")
+                    // $("#imglg").css("background-image", "url('./img/fitness-about-bg.jpg')")
+                    $("#mainDiv").add('h-[590px]')
                 }
             }
 
-            // Initial check on page load
+
             handleMediaQueryChange(mediaQuery);
 
-            // Add event listener to detect changes in the media query
             mediaQuery.addEventListener("change", handleMediaQueryChange);
         });
 
