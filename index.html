@@ -171,14 +171,14 @@
 
 <body>
     <!-- Navbar  -->
-    <header id="navbar" class="md:px-9 px-4 bg-transparent w-[100%] fixed z-50 py-4 md:py-5">
+    <header id="navbar" class="lg:px-9 px-4 bg-transparent w-[100%] fixed z-50 py-4 lg:py-5">
         <div class="mx-auto flex flex-wrap items-center">
             <div class="flex-1 flex justify-between items-center">
                 <img src="./img/logo-white.png" class="h-9" alt="">
             </div>
 
-            <label for="menu-toggle" class="pointer-cursor md:hidden block bg-black p-2">
-                <svg class="fill-current text-gray-300 hover:text-white" xmlns="http://www.w3.org/2000/svg" width="20"
+            <label for="menu-toggle" class="pointer-cursor px-3 lg:hidden block bg-black p-2">
+                <svg class="fill-current text-white hover:text-white" xmlns="http://www.w3.org/2000/svg" width="22"
                     height="20" viewBox="0 0 20 20">
                     <title>menu</title>
                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
@@ -187,25 +187,25 @@
 
             <input class="hidden" type="checkbox" id="menu-toggle" />
 
-            <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+            <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
                 <nav>
                     <ul id="navul"
-                        class="md:flex md:bg-transparent mt-4 md:mt-0  bg-[#000000e3]  items-center gap-3 justify-between text-[12px] md:p-0 p-6 pt-8 md:pt-0 placeholder-shown:">
-                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all md:border-none border-b border-gray-700 md:mt-0 mt-3"
+                        class="lg:flex lg:bg-transparent mt-4 lg:mt-0 bg-[#000000e3] items-center gap-3 justify-between text-[12px] lg:p-0 p-6 pt-8 lg:pt-0 placeholder-shown:">
+                        <li><a class="lg:px-4 py-2 lg:py-4 px-0 block text-white hover:text-gray-300 transition-all lg:border-none border-b border-gray-700 lg:mt-0 mt-3"
                                 href="#">ABOUT US</a></li>
-                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all md:border-none border-b border-gray-700 md:mt-0 mt-3"
+                        <li><a class="lg:px-4 py-2 lg:py-4 px-0 block text-white hover:text-gray-300 transition-all lg:border-none border-b border-gray-700 lg:mt-0 mt-3"
                                 href="#">FEATURES</a></li>
-                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all md:border-none border-b border-gray-700 md:mt-0 mt-3"
+                        <li><a class="lg:px-4 py-2 lg:py-4 px-0 block text-white hover:text-gray-300 transition-all lg:border-none border-b border-gray-700 lg:mt-0 mt-3"
                                 href="#">COLORS</a></li>
-                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all md:border-none border-b border-gray-700 md:mt-0 mt-3"
+                        <li><a class="lg:px-4 py-2 lg:py-4 px-0 block text-white hover:text-gray-300 transition-all lg:border-none border-b border-gray-700 lg:mt-0 mt-3"
                                 href="#">DESIGN</a></li>
-                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all md:border-none border-b border-gray-700 md:mt-0 mt-3"
+                        <li><a class="lg:px-4 py-2 lg:py-4 px-0 block text-white hover:text-gray-300 transition-all lg:border-none border-b border-gray-700 lg:mt-0 mt-3"
                                 href="#">REVIEWS</a></li>
-                        <li><a class="md:px-4 py-2 md:py-4 px-0 block text-white hover:text-gray-300 transition-all md:border-none md:mt-0 mt-3"
+                        <li><a class="lg:px-4 py-2 lg:py-4 px-0 block text-white hover:text-gray-300 transition-all lg:border-none lg:mt-0 mt-3"
                                 href="#">PRODUCT</a></li>
                         <li>
                             <button
-                                class="px-4 py-[6px] text-[10px] font-medium bg-white flex justify-between items-center gap-2 hover:bg-gray-300 transition-all duration-300 md:mt-0 mt-4">
+                                class="px-4 py-[6px] text-[10px] font-medium bg-white flex justify-between items-center gap-2 hover:bg-gray-300 transition-all duration-300 lg:mt-0 mt-4">
                                 <i class="ri-shopping-bag-fill"></i> <span>BUY NOW</span>
                             </button>
                         </li>
@@ -214,14 +214,18 @@
             </div>
         </div>
     </header>
+
     <!-- Navbar end  -->
     <!-- first Slider  -->
-    <div id="default-carousel" class="owl-carousel owl-theme w-full md:h-[999px] h-[70vh] cursor-w-resize top-0 z-0">
+    <div id="default-carousel"
+        class="owl-carousel owl-theme w-full lg:h-[999px] md:h-[800px] h-[500px] cursor-w-resize top-0 z-0">
         <!-- Slide 1 -->
         <div class="item">
-            <div class="FirstSlide md:h-[999px] h-[75vh] cursor-w-resize">
+            <div class="FirstSlide lg:h-[999px] md:h-[800px] h-[500px] cursor-w-resize">
                 <div class=" container md:px-0 h-[95%] flex flex-col gap-5 justify-center relative">
-                    <h1 class="text-white md:text-[80px] md:leading-[4.5rem] font-bold text-[30px] leading-[2rem]">NEW
+                    <h1
+                        class="text-white lg:text-[80px] md:text-[60px] md:leading-[4rem] lg:leading-[4.5rem] font-bold text-[30px] leading-[2rem]">
+                        NEW
                         LEVEL <br>
                         OF SOUND <br>
                         EXPERIENCE.
@@ -231,7 +235,7 @@
                             text of
                             printing and
                             industry.
-                            <br class="hidden md:block">Lorem Ipsum the industry's dummy text ever since.
+                            <br class="hidden lg:block">Lorem Ipsum the industry's dummy text ever since.
                         </p>
                     </div>
 
@@ -251,15 +255,16 @@
         </div>
         <!-- Slide 2 -->
         <div class="item">
-            <div class="secondSlide md:h-[999px] h-[75vh] cursor-w-resize">
+            <div class="secondSlide lg:h-[999px] md:h-[800px] h-[500px] cursor-w-resize">
                 <div class="container md:px-0 h-[95%] flex flex-col gap-4 justify-center">
-                    <h1 class="text-white md:text-[80px] md:leading-[4.5rem] font-bold text-[30px] leading-[2rem]">
+                    <h1
+                        class="text-white lg:text-[80px] lg:leading-[4.5rem] md:text-[60px] md:leading-[4rem] font-bold text-[30px] leading-[2rem]">
                         FRESH,<br> BEAUTIFUL<br> INNOVATIVE</h1>
                     <div class="para-div">
                         <p class="text-white font-semibold text-sm md:text-lg">Lorem Ipsum is simply dummy text of
                             printing and
                             industry.
-                            <br class="hidden md:block">Lorem Ipsum the industry's dummy text ever since.
+                            <br class="hidden lg:block">Lorem Ipsum the industry's dummy text ever since.
                         </p>
                     </div>
 
@@ -279,9 +284,11 @@
 
         <!-- Slide 3 -->
         <div class="item">
-            <div class="thirdSlide cursor-w-resize md:h-[999px] h-[75vh]">
+            <div class="thirdSlide cursor-w-resize lg:h-[999px] md:h-[800px] h-[500px]">
                 <div class="container md:px-0 h-[95%] flex flex-col gap-4 justify-center">
-                    <h1 class="text-white md:text-[80px] md:leading-[4.5rem] font-bold text-[30px] leading-[2rem]">THE
+                    <h1
+                        class="text-white lg:text-[80px] lg:leading-[4.5rem] md:text-[60px] md:leading-[4rem] font-bold text-[30px] leading-[2rem]">
+                        THE
                         PRODUCT<br>
                         OF THE FUTURE<br>
                     </h1>
@@ -289,7 +296,7 @@
                         <p class="text-white font-semibold text-sm md:text-lg">Lorem Ipsum is simply dummy text of
                             printing and
                             industry.
-                            <br class="hidden md:block">Lorem Ipsum the industry's dummy text ever since.
+                            <br class="hidden lg:block">Lorem Ipsum the industry's dummy text ever since.
                         </p>
                     </div>
 
@@ -313,23 +320,23 @@
     </div>
     <!-- first Slider end  -->
     <!-- section 1  -->
-    <div class="container md:mt-20 md:flex items-center pt-[110px] pb-[110px]">
+    <div class="container md:mt-20 md:flex items-center lg:pt-[110px] lg:pb-[110px] pt-[60px] pb-[60px]">
         <div class="md:w-[50%] w-[100%] text-center md:text-start flex flex-col gap-4">
-            <h1 class="md:text-4xl text-[25px] font-medium md:w-[90%] w-[100%] text-[#282828] leading-8">
+            <h1 class="lg:text-4xl text-[25px] font-medium md:w-[90%] w-[100%] text-[#282828] leading-8">
                 The best product on the
                 market, just for you.
             </h1>
-            <p class="md:w-[90%] w-[100%] md:text-lg text-[17px] text-[#474747]">Lorem Ipsum is simply dummy text of the
+            <p class="md:w-[90%] w-[100%] md:text-lg text-[17px] text-[#707070]">Lorem Ipsum is simply dummy
+                text of the
                 printing and
                 typesetting
                 industry. It has
                 survived not only five
                 centuries.</p>
-            <p
-                class="md:w-[90%] w-[100%] text-[14px] leading-[24px] md:text-sm md:leading-[25px] text-[#707070] md:px-0">
+            <p class="md:w-[90%] w-[100%] text-[13px] leading-[24px]  md:leading-[25px] text-[#707070]">
                 Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a
                 galley of type scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard
-                dummy text ever since the when an unknown printer took a galley of type scrambled.
+                dummy text ever since the when an unknown printer took a galley type scrambled.
             </p>
 
             <div class="md:text-start text-center md:w-[80%] w-[100%] mt-3 mb-3">
@@ -367,7 +374,7 @@
         </div>
 
         <div class="item">
-            <div class="secSlider4 h-[40vh]">
+            <div class="secSlider4">
                 <img src="./img/agency-work-04.jpg" alt="">
             </div>
         </div>
@@ -376,16 +383,17 @@
     </div>
     <!-- second slider end -->
     <!-- section 2 -->
-    <div class="container md:flex justify-around pt-[110px] pb-[110px]">
+    <div class="container md:flex justify-around md:pt-[110px] md:pb-[110px] pt-[60px] pb-[60px]">
         <div class="md:w-[50%] w-[100%] flex md:items-center justify-center text-center">
             <img src="./img/content-50.png" alt="" width="100%">
         </div>
         <div class="md:w-[50%] w-[100%] flex flex-col gap-5 justify-center items-center">
-            <h1 class="md:text-4xl text-2xl text-center md:text-start font-medium w-[100%] md:w-[90%] text-[#282828]">
+            <h1 class="lg:text-4xl text-2xl text-center md:text-start font-medium w-[100%] md:w-[90%] text-[#282828]">
                 Flexibility and design <br>
                 possibilities at their best.
             </h1>
-            <p class="md:w-[90%] w-[100%] text-lg text-center md:text-start text-[#474747]">Lorem Ipsum is simply dummy
+            <p class="md:w-[90%] w-[100%] md:text-lg text-[17px] text-center md:text-start text-[#707070]">Lorem Ipsum
+                is simply dummy
                 text of the printing and typesetting
                 industry. It has
                 survived not only five
@@ -405,7 +413,7 @@
     </div>
     <!-- section 2 end -->
     <!-- section 3 -->
-    <div class="grid md:grid-cols-2 grid-cols-1 md:h-[1338px]">
+    <div class="grid lg:grid-cols-2 grid-cols-1 md:h-[1338px]">
 
         <!-- First Grid Column -->
         <div class="bg-[#46eff0] md:pt-0 pt-8 md:pb-0 pb-8 flex flex-col justify-center items-center gap-12">
@@ -417,7 +425,9 @@
                     <h2 class="text-2xl font-medium">
                         The best sound.
                     </h2>
-                    <p class="text-sm">Put it on repeat and stay unplugged all day thanks to up to 40 hours of battery
+                    <p class="text-sm lg:px-0 px-2">Put it on repeat and stay unplugged all day thanks to up to 40 hours
+                        of
+                        battery
                         life. You can
                         keep track of the battery with the illuminated LED fuel gauge located on the headphone itself.
                     </p>
@@ -432,7 +442,8 @@
                     <h2 class="text-2xl font-medium">
                         Unbelievable doom.
                     </h2>
-                    <p class="text-sm">Put it on repeat and stay unplugged all day thanks to up to 40 hours of battery
+                    <p class="text-sm lg:px-0 px-2">Put it on repeat and stay unplugged all day thanks to up to 40 hours
+                        of battery
                         life. You can
                         keep track of the battery with the illuminated LED fuel gauge located on the headphone itself.
                     </p>
@@ -446,7 +457,8 @@
                     <h2 class="text-2xl font-medium">
                         Drop the bass.
                     </h2>
-                    <p class="text-sm">The ultimate staple in your headphone closet, Plattan offers a rich, secluded
+                    <p class="text-sm lg:px-0 px-2">The ultimate staple in your headphone closet, Plattan offers a rich,
+                        secluded
                         sound experience, and convenient extras that make life easier. Features a fabric headband,
                         tangle-free cable, built-in mic/remote.
                     </p>
@@ -464,7 +476,7 @@
     <!-- section 3 end -->
     <!-- section 4 -->
     <div class="container">
-        <div class="text-center flex flex-col gap-4 w-[100%] md:pt-[110px] md:pb-[110px] pt-8 pb-8">
+        <div class="text-center flex flex-col gap-4 w-[100%] md:pt-[110px] md:pb-[110px] pt-14 pb-12">
             <h1 class="md:text-4xl text-[25px] font-medium text-[#282828] leading-8">
                 The new vibrant colors
             </h1>
@@ -485,9 +497,9 @@
     </div>
     <!-- section 4 end -->
     <!-- 3rd slider start  -->
-    <div class="md:hidden relative">
+    <div class="lg:hidden relative">
         <div id="default-carousel-3"
-            class=" block owl-carousel h-[750px] owl-theme md:mt-7 plusCursor owl-theme md:hidden relative top-0 z-0">
+            class=" block owl-carousel h-[800px] owl-theme lg:mt-7 plusCursor owl-theme lg:hidden relative top-0 z-0 mb-[25px]">
             <!-- Slide 1 -->
             <div class="item">
                 <img src="./img/application-screenshot-img-01.png" alt="" class="mx-auto">
@@ -514,19 +526,21 @@
         <div class="item">
             <div id="imglg" style="background: linear-gradient(rgba(35, 31, 41, 0), rgba(35, 31, 41, 0)) repeat scroll 0% 0%, transparent url(images/bg-image/hero-bg40.jpg) repeat scroll 0% 0%;
         background-size: cover; 
-        ">
+        background-position: center;
+        " class="h-[590px]">
                 <div class="container md:px-0 h-[100%]" id="hideContainer">
                     <div id="forheight"
-                        class="grid grid-cols-1 gap-4 bg-[#a78a73] h-[100%] md:w-[58%] w-[100%] z-40 md:p-24 p-8 pt-10 pb-10">
+                        class="grid grid-cols-1 gap-3 bg-[#a78a73] h-[100%] md:w-[58%] w-[100%] z-40 md:p-24 p-8 pt-10 pb-10">
                         <h1 class="text-white text-[27px] leading-8 md:leading-[3rem] font-medium md:text-[45px]">
                             Designed for
                             Sound.
                             Tuned for Emotion.
                         </h1>
-                        <h2 class="text-white md:text-xl text-lg">
+                        <h2 class="text-white lg:text-[24px] text-lg">
                             The award-winning sound and design you’ve come to love from doom.
                         </h2>
-                        <p class="text-white text-[14px] text-sm">This headphone delivers premium playback with
+                        <p class="text-white text-[13px] md:text-sm pb-[15px]">This headphone delivers premium playback
+                            with
                             fine-tuned
                             acoustics that maximize clarity, breadth, and balance. The comfort-cushion ear cups buffer
                             outside noise for immersive sound so you can experience music the way it was meant to be
@@ -545,15 +559,14 @@
 
     </div>
 
-
-    <div class="h-[590px]">
+    <div class="lg:h-[590px] h-[400px]">
         <div class="item">
             <div style="background-image: url('./img/hero-bg40.jpg'); background-repeat: no-repeat;
         background-position: center;
         background-size: cover; 
-        height: 590px;">
+        " class="lg:h-[590px] h-[400px]">
                 <div class="container md:px-0 h-[100%]">
-                    <div class="grid grid-cols-1 gap-3 h-[100%] w-[58%] z-40 items-center">
+                    <div class="grid grid-cols-1 gap-3 h-[100%] md:w-[58%] w-[100%] z-40 items-center">
                         <img src="./img/hero-text.png" alt="">
 
                     </div>
@@ -563,52 +576,50 @@
         </div>
     </div>
 
-
-    <div class="pt-[110px] pb-[110px]">
+    <div class="lg:pt-[110px] lg:pb-[110px] pt-[60px] pb-[60px]">
         <div class="container">
             <div class="grid md:grid-cols-2 grid-cols-1 gap-16">
 
-                <div class="md:flex items-center gap-7">
-                    <div class="w-[20%]">
+                <div class="flex md:flex-row flex-col lg:items-center gap-7">
+                    <div class="lg:w-[20%] md:w-[35%] w-[40%] md:mx-0 mx-auto">
                         <img src="./img/avtar-10.jpg" alt="" class="rounded-full my-auto" width="100%">
                     </div>
-                    <div class="w-[80%] flex flex-col gap-3">
+                    <div class="md:w-[80%] w-[100%] flex flex-col gap-3 md:text-start text-center">
                         <p class="text-[14px]">Lorem Ipsum has been the industry's standard dummy text ever since, when
                             an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <p>- NATHAN FORD</p>
+                        <p class="text-[12px] md:text-[13px] text-black font-medium">- NATHAN FORD</p>
                     </div>
                 </div>
-                <div class="flex items-center gap-7">
-                    <div class="w-[20%]">
+                <div class="flex md:flex-row flex-col lg:items-center gap-7">
+                    <div class="lg:w-[20%] md:w-[35%] w-[40%] md:mx-0 mx-auto">
                         <img src="./img/avtar-11.jpg" alt="" class="rounded-full my-auto" width="100%">
                     </div>
-                    <div class="w-[80%] flex flex-col gap-3">
+                    <div class="md:w-[80%] w-[100%] flex flex-col gap-3 md:text-start text-center">
                         <p class="text-[14px]">Lorem Ipsum has been the industry's standard dummy text ever since, when
                             an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <p>- NATHAN FORD</p>
+                        <p class="text-[12px] md:text-[13px] text-black font-medium">- NATHAN FORD</p>
                     </div>
                 </div>
-                <div class="flex items-center gap-7">
-                    <div class="w-[20%]">
+                <div class="flex md:flex-row flex-col lg:items-center gap-7">
+                    <div class="lg:w-[20%] md:w-[35%] w-[40%] md:mx-0 mx-auto">
                         <img src="./img/avtar-12.jpg" alt="" class="rounded-full my-auto" width="100%">
                     </div>
-                    <div class="w-[80%] flex flex-col gap-3">
+                    <div class="md:w-[80%] w-[100%] flex flex-col gap-3 md:text-start text-center">
                         <p class="text-[14px]">Lorem Ipsum has been the industry's standard dummy text ever since, when
                             an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <p>- NATHAN FORD</p>
+                        <p class="text-[12px] md:text-[13px] text-black font-medium">- NATHAN FORD</p>
                     </div>
                 </div>
-                <div class="flex items-center gap-7">
-                    <div class="w-[20%]">
+                <div class="flex md:flex-row flex-col lg:items-center gap-7">
+                    <div class="lg:w-[20%] md:w-[35%] w-[40%] md:mx-0 mx-auto">
                         <img src="./img/avtar-13.jpg" alt="" class="rounded-full my-auto" width="100%">
                     </div>
-                    <div class="w-[80%] flex flex-col gap-3">
+                    <div class="md:w-[80%] w-[100%] flex flex-col gap-3 md:text-start text-center">
                         <p class="text-[14px]">Lorem Ipsum has been the industry's standard dummy text ever since, when
                             an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <p>- NATHAN FORD</p>
+                        <p class="text-[12px] md:text-[13px] text-black font-medium">- NATHAN FORD</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -735,18 +746,16 @@
 
         </div>
     </div>
-
+    <!-- footer Start  -->
     <div class="pt-[60px] pb-[60px] bg-[#f6f6f6] border-1 border-gray-500">
         <div class="container">
             <div class="grid md:grid-cols-5 grid-cols-1">
-                <div class="flex flex-col justify-center items-center gap-5 w-[100%]">
-                    <div class="flex flex-col gap-2">
-                        <div class="text-center w-[100%]">
+                <div class="flex flex-col gap-5 w-[100%]">
+                    <div class="flex flex-col gap-3">
+                        <div class="w-[100%] flex flex-col gap-3">
                             <img src="./img/logo (1).png" alt="" width="70%">
                             <p class="text-[12px]">301 The Greenhouse, Custard Factory, London, E2 8DY.</p>
                         </div>
-
-
                     </div>
                     <div class="flex gap-3 w-[100%] mx-auto">
                         <i class="bi bi-facebook text-[#4e4e4e]"></i>
@@ -816,6 +825,8 @@
             </div>
         </div>
     </div>
+    <!-- footer end   -->
+
 
     <!-- jQuery (necessary for Owl Carousel) -->
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
@@ -858,8 +869,8 @@
                 dots: true,             // Show dots
                 responsive: {
                     0: { items: 1 },      // 1 item on small screens
-                    600: { items: 2 },    // 1 item on medium screens
-                    1000: { items: 3 },   // 1 item on large screens
+                    700: { items: 2 },    // 1 item on medium screens
+                    800: { items: 3 },   // 1 item on large screens
                 }
             });
         });
@@ -892,21 +903,23 @@
 
             function handleMediaQueryChange(e) {
                 if (e.matches) {
-                    // document.getElementById('hideContainer').classList.remove('container')
                     $("#hideContainer").removeClass('container');
                     $("#hideContainer").removeClass('h-[100%]');
                     $("#imglg").css("background-image", "none");
                     $("#imglg").css("height", "auto");
-                    $("#mainDiv").removeClass('h-[590px]')
-                    $("#forheight").removeClass('h-[100%]')
+                    $("#mainDiv").removeClass('h-[590px]');
+                    $("#forheight").removeClass('h-[100%]');
+                    $(".textIMG").removeClass('h-[500px]');
+                    $(".textIMG").addClass('h-[400px]');
 
                 } else {
                     $("#forheight").css("height", "100%");
                     $("#hideContainer").addClass('container');
                     $("#hideContainer").addClass('h-[100%]');
                     $("#imglg").css("background-image", "url('./img/fitness-about-bg.jpg')")
-                    // $("#imglg").css("background-image", "url('./img/fitness-about-bg.jpg')")
-                    $("#mainDiv").add('h-[590px]')
+                    $("#mainDiv").addClass('h-[590px]')
+                    $(".textIMG").removeClass('h-[400px]')
+                    $(".textIMG").addClass('h-[590px]')
                 }
             }
 
