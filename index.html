@@ -92,10 +92,16 @@
             border: 1px solid #000;
         }
 
+
+
         #default-carousel-3 .owl-dots .owl-dot span {
             background-color: transparent;
             border: 1px solid #000;
             position: static;
+        }
+
+        #default-carousel-modal .owl-dots .owl-dot span {
+            display: none;
         }
 
         #default-carousel-3 .owl-dots {
@@ -341,8 +347,8 @@
 
             <div class="md:text-start text-center md:w-[80%] w-[100%] mt-3 mb-3">
                 <button
-                    class="py-2 text-[12px] px-4 font-medium border-2 rounded-full border-[#43cbcd] text-[#43cbcd]">CONTINUE
-                    READING </button>
+                    class="py-2 text-[12px] px-4 font-medium border-2 rounded-full border-[#43cbcd] text-[#43cbcd] hover:text-[#44dcdf] hover:border-[#44dcdf]  transition-all duration-200">CONTINUE
+                    READING<i class="bi bi-arrow-right font-bold ml-2 text-[12px]"></i> </button>
             </div>
         </div>
         <div class="md:w-[50%] w-[100%] flex justify-center items-center text-center pt-3 md:pt-0">
@@ -353,13 +359,13 @@
     <!-- second slider  -->
     <div id="default-carousel-2" class="owl-carousel md:mt-7 plusCursor owl-theme w-full relative top-0 z-0">
         <!-- Slide 1 -->
-        <div class="item">
+        <div class="item" data-modal-target="popup-modal" data-modal-toggle="popup-modal" id="btn1">
             <div class="secSlider1">
                 <img src="./img/agency-work-01.jpg" alt="">
             </div>
         </div>
         <!-- Slide 2 -->
-        <div class="item">
+        <div class="item" data-modal-target="popup-modal" data-modal-toggle="popup-modal" id="btn2">
             <div class="secSlider2">
                 <img src="./img/agency-work-02.jpg" alt="">
             </div>
@@ -367,13 +373,13 @@
 
 
         <!-- Slide 3 -->
-        <div class="item">
+        <div class="item" data-modal-target="popup-modal" data-modal-toggle="popup-modal" id="btn3">
             <div class="secSlider3">
                 <img src="./img/agency-work-03.jpg" alt="">
             </div>
         </div>
 
-        <div class="item">
+        <div class="item" data-modal-target="popup-modal" data-modal-toggle="popup-modal" id="btn4">
             <div class="secSlider4">
                 <img src="./img/agency-work-04.jpg" alt="">
             </div>
@@ -405,15 +411,15 @@
             </p>
             <div class="md:text-start text-center md:w-[90%] w-[100%] mt-3">
                 <button
-                    class="py-2 text-[12px] px-4 font-medium border-2 rounded-full border-[#43cbcd] text-[#43cbcd]">CONTINUE
-                    READING </button>
+                    class="py-2 text-[12px] px-4 font-medium border-2 rounded-full border-[#43cbcd] text-[#43cbcd] hover:text-[#44dcdf] hover:border-[#44dcdf]  transition-all duration-200">CONTINUE
+                    READING <i class="bi bi-arrow-right font-bold ml-2 text-[12px]"></i></button>
             </div>
         </div>
 
     </div>
     <!-- section 2 end -->
     <!-- section 3 -->
-    <div class="grid lg:grid-cols-2 grid-cols-1 md:h-[1338px]">
+    <div class="grid lg:grid-cols-2 grid-cols-1 lg:h-[800px]">
 
         <!-- First Grid Column -->
         <div class="bg-[#46eff0] md:pt-0 pt-8 md:pb-0 pb-8 flex flex-col justify-center items-center gap-12">
@@ -468,8 +474,8 @@
         </div>
 
         <!-- Second Grid Column -->
-        <div class="w-[100%] md:h-[786px] h-[300px] lg:h-[100%]"
-            style="background-image: url('./img/hero-bg38.jpg'); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+        <div class="w-[100%]  h-[300px] lg:h-[800px]"
+            style="background-image: url('./img/hero-bg38.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
         </div>
 
     </div>
@@ -678,7 +684,7 @@
 
                     <div>
                         <button
-                            class="border-2 border-[#43cbcd] px-6 py-2 text-[#43cbcd] font-semibold rounded-full text-[12px]">
+                            class="border-2 font-semibold rounded-full text-[12px] border-[#43cbcd] px-6 py-2 text-[#43cbcd] hover:text-[#44dcdf] hover:border-[#44dcdf]  transition-all duration-200">
                             BUY NOW >
                         </button>
                     </div>
@@ -702,7 +708,7 @@
 
                     <div>
                         <button
-                            class="border-2 border-[#43cbcd] px-6 py-2 text-[#43cbcd] font-semibold rounded-full text-[12px]">
+                            class="border-2 border-[#43cbcd] px-6 py-2 text-[#43cbcd] font-semibold rounded-full text-[12px] hover:text-[#44dcdf] hover:border-[#44dcdf]  transition-all duration-200">
                             BUY NOW >
                         </button>
                     </div>
@@ -726,7 +732,7 @@
 
                     <div>
                         <button
-                            class="border-2 border-[#43cbcd] px-6 py-2 text-[#43cbcd] font-semibold rounded-full text-[12px]">
+                            class="border-2 border-[#43cbcd] px-6 py-2 text-[#43cbcd] font-semibold rounded-full text-[12px] hover:text-[#44dcdf] hover:border-[#44dcdf]  transition-all duration-200">
                             BUY NOW >
                         </button>
                     </div>
@@ -750,7 +756,7 @@
 
                     <div>
                         <button
-                            class="border-2 border-[#43cbcd] px-6 py-2 text-[#43cbcd] font-semibold rounded-full text-[12px]">
+                            class="border-2 border-[#43cbcd] px-6 py-2 text-[#43cbcd] font-semibold rounded-full text-[12px] hover:text-[#44dcdf] hover:border-[#44dcdf]  transition-all duration-200">
                             BUY NOW >
                         </button>
                     </div>
@@ -761,7 +767,7 @@
         </div>
     </div>
     <!-- footer Start  -->
-    <div class="pt-[60px] pb-[60px] bg-[#f6f6f6]" style="border-top: 1px solid #e6e6e6;">
+    <div class="pt-[60px] bg-[#f6f6f6]" style="border-top: 1px solid #e6e6e6;">
         <div class="container pb-14 md:block lg:hidden hidden">
             <div class="flex flex-col gap-5 w-[100%]">
                 <div class="flex flex-col gap-3">
@@ -863,11 +869,116 @@
                 </div>
             </div>
         </div>
-        <div class="container text-center pt-7">
-            <p class="text-[13px] text-[#848484]"> © 2016 LeadGen is proudly powered by ThemeZaa.</p>
-        </div>
+    </div>
+    <div class="container text-center my-auto py-9">
+        <p class="text-[13px] text-[#848484]"> © 2016 LeadGen is proudly powered by ThemeZaa.</p>
     </div>
     <!-- footer end   -->
+
+
+    <!-- Button to Trigger Modal -->
+    <button data-modal-target="popup-modal" data-modal-toggle="popup-modal"
+        class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        type="button">
+        Toggle Modal
+    </button>
+
+
+
+    <div id="popup-modal" tabindex="-1" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50">
+        <!-- Wrapper for Modal -->
+        <div class="absolute inset-0 flex justify-center items-center">
+            <div class="bg-white w-full h-full shadow-lg dark:bg-gray-700">
+                <!-- Close Button -->
+                <button type="button"
+                    class="absolute top-0 right-4 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-hide="popup-modal">
+                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"
+                        aria-hidden="true">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+                <!-- Modal Content -->
+                <div class="h-[100%] flex justify-between items-center">
+
+
+                    <div id="controls-carousel" class="relative w-full h-[90%]" data-carousel="static">
+                        <!-- Carousel wrapper -->
+                        <div class="relative h-[100%] overflow-hidden rounded-lg">
+                            <!-- Item 1 -->
+                            <div class="hidden duration-700 ease-in-out" id="slideone" data-carousel-item>
+                                <img src="./img/agency-work-01.jpg"
+                                    class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="hidden duration-700 ease-in-out" id="slidetwo" data-carousel-item>
+                                <img src="./img/agency-work-02.jpg"
+                                    class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="hidden duration-700 ease-in-out" id="slidethree" data-carousel-item>
+                                <img src="./img/agency-work-03.jpg"
+                                    class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="hidden duration-700 ease-in-out" id="slidefour" data-carousel-item>
+                                <img src="./img/agency-work-04.jpg"
+                                    class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 5 -->
+
+                        </div>
+                        <!-- Slider controls -->
+                        <!-- Previous Button -->
+                        <button type="button"
+                            class="absolute top-1/2 left-0 -translate-y-1/2 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-prev>
+                            <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black group-hover:bg-black/80 group-focus:ring-4 group-focus:ring-black group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M5 1 1 5l4 4" />
+                                </svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
+                        </button>
+
+
+                        <!-- Next Button -->
+                        <button type="button"
+                            class="absolute top-1/2 right-0 -translate-y-1/2 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-next>
+                            <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black group-hover:bg-black/80 group-focus:ring-4 group-focus:ring-black group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 9 4-4-4-4" />
+                                </svg>
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </button>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 
 
     <!-- jQuery (necessary for Owl Carousel) -->
@@ -953,7 +1064,7 @@
                     $("#forheight").removeClass('h-[100%]').addClass('h-[400px]');
                 } else if (mediaQueryLg.matches) {
                     // For screens above 768px
-                    $("#hideContainer").removeClass('container'); // No container on md screen
+                    $("#hideContainer").addClass('container'); // No container on md screen
                     $("#hideContainer").addClass('h-[100%]');
                     $("#imglg").css("background-image", "url('./img/fitness-about-bg.jpg')");
                     $("#imglg").css("height", "500px"); // Default to 500px
@@ -975,6 +1086,13 @@
         });
 
 
+
+        $("#btn1").click(function () {
+            // Remove the specified classes from all siblings of #slideone
+            $("#slideone").siblings().removeClass('transition-transform transform translate-x-0 z-30');
+            // Add the specified classes to #slideone
+            $("#slideone").addClass('transition-transform transform translate-x-0 z-30');
+        });
 
 
     </script>
