@@ -875,11 +875,7 @@
     </div>
     <!-- footer end   -->
 
-
     <!-- Button to Trigger Modal -->
-
-
-
     <div id="popup-modal" tabindex="-1" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50">
         <!-- Wrapper for Modal -->
         <div class="absolute inset-0 flex justify-center items-center">
@@ -1083,11 +1079,13 @@
 
 
         $("#btn1").click(function () {
-            // Remove the specified classes from all siblings of #slideone
-            $("#slideone").siblings().removeClass('transition-transform transform translate-x-0 z-30');
-            // Add the specified classes to #slideone
-            $("#slideone").addClass('transition-transform transform translate-x-0 z-30');
+            // Reset all slides
+            $(".transition-transform").removeClass("translate-x-0").addClass("translate-x-full").addClass("hidden");
+
+            // Show the specific slide and animate it
+            $("#slideone").removeClass("hidden translate-x-full translate-x-minus-full").addClass("translate-x-0");
         });
+
 
 
     </script>
