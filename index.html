@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
         rel="stylesheet">
@@ -877,98 +879,49 @@
     <div id="popup-modal" tabindex="-1" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50">
         <!-- Wrapper for Modal -->
         <div class="absolute inset-0 flex justify-center items-center">
-            <div class="bg-white w-full h-full shadow-lg dark:bg-gray-700">
-                <!-- Close Button -->
-                <button type="button"
-                    class="absolute top-0 right-4 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+          <div class="bg-white w-full h-full shadow-lg dark:bg-gray-700 relative">
+            <!-- Close Button -->
+            <button type="button"
+                    class="absolute top-4 right-4 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
                     data-modal-hide="popup-modal">
-                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"
-                        aria-hidden="true">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                    </svg>
-                    <span class="sr-only">Close modal</span>
-                </button>
-                <!-- Modal Content -->
-                <div class="h-[100%] flex justify-between items-center">
-
-
-                    <div id="controls-carousel" class="relative w-full h-[90%]" data-carousel="static">
-                        <!-- Carousel wrapper -->
-                        <div class="relative h-[100%] overflow-hidden rounded-lg">
-                            <!-- Item 1 -->
-                            <div class="hidden duration-700 ease-in-out" id="slideone" data-carousel-item>
-                                <img src="./img/agency-work-01.jpg"
-                                    class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                    alt="...">
-                            </div>
-                            <!-- Item 2 -->
-                            <div class="hidden duration-700 ease-in-out" id="slidetwo" data-carousel-item>
-                                <img src="./img/agency-work-02.jpg"
-                                    class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                    alt="...">
-                            </div>
-                            <!-- Item 3 -->
-                            <div class="hidden duration-700 ease-in-out" id="slidethree" data-carousel-item>
-                                <img src="./img/agency-work-03.jpg"
-                                    class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                    alt="...">
-                            </div>
-                            <!-- Item 4 -->
-                            <div class="hidden duration-700 ease-in-out" id="slidefour" data-carousel-item>
-                                <img src="./img/agency-work-04.jpg"
-                                    class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                    alt="...">
-                            </div>
-                            <!-- Item 5 -->
-
-                        </div>
-                        <!-- Slider controls -->
-                        <!-- Previous Button -->
-                        <button type="button"
-                            class="absolute top-1/2 left-0 -translate-y-1/2 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none"
-                            data-carousel-prev>
-                            <span
-                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black group-hover:bg-black/80 group-focus:ring-4 group-focus:ring-black group-focus:outline-none">
-                                <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 6 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M5 1 1 5l4 4" />
-                                </svg>
-                                <span class="sr-only">Previous</span>
-                            </span>
-                        </button>
-
-
-                        <!-- Next Button -->
-                        <button type="button"
-                            class="absolute top-1/2 right-0 -translate-y-1/2 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none"
-                            data-carousel-next>
-                            <span
-                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black group-hover:bg-black/80 group-focus:ring-4 group-focus:ring-black group-focus:outline-none">
-                                <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 6 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m1 9 4-4-4-4" />
-                                </svg>
-                                <span class="sr-only">Next</span>
-                            </span>
-                        </button>
-
-
-
-                    </div>
-
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" aria-hidden="true">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+            <!-- Modal Content -->
+            <div class="h-[100%] flex justify-center items-center">
+              <!-- Swiper Carousel -->
+              <div class="swiper w-full h-[90%] relative">
+                <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide flex justify-center items-center">
+                    <img src="./img/agency-work-01.jpg" class="w-1/2 h-auto object-cover" alt="Slide 1">
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide flex justify-center items-center">
+                    <img src="./img/agency-work-02.jpg" class="w-1/2 h-auto object-cover" alt="Slide 2">
+                  </div>
+                  <!-- Slide 3 -->
+                  <div class="swiper-slide flex justify-center items-center">
+                    <img src="./img/agency-work-03.jpg" class="w-1/2 h-auto object-cover" alt="Slide 3">
+                  </div>
+                  <!-- Slide 4 -->
+                  <div class="swiper-slide flex justify-center items-center">
+                    <img src="./img/agency-work-04.jpg" class="w-1/2 h-auto object-cover" alt="Slide 4">
+                  </div>
                 </div>
+                <!-- Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-
-
-
-
-
-
+      </div>
 
     <!-- jQuery (necessary for Owl Carousel) -->
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
@@ -976,6 +929,7 @@
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 
@@ -985,6 +939,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="main.js"></script>
     <script src="script.js"></script>
     <script>
@@ -1076,17 +1031,34 @@
 
 
 
-        $("#btn1").click(function () {
-            // Reset all slides
-            $(".transition-transform").removeClass("translate-x-0").addClass("translate-x-full").addClass("hidden");
-
-            // Show the specific slide and animate it
-            $("#slideone").removeClass("hidden translate-x-full translate-x-minus-full").addClass("translate-x-0");
-        });
+    
 
 
 
     </script>
+
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js';
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const swiperModal = new Swiper('.swiper', {
+            loop: true, // Enables loop mode
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            spaceBetween: 10,  // Space between slides (adjust as needed)
+            slidesPerView: 1,  // Number of slides to show at once
+        });
+    });
+</script>
+
+  
+
 </body>
 
 </html>
